@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Pour permettre à l'utilisateur de revenir à la page d'accueil
+import { Link } from 'react-router-dom'; 
 
 function NotFound() {
   return (

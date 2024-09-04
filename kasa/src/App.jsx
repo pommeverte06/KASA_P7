@@ -1,22 +1,18 @@
-
 import React from "react";
-import Header from "./components/header"; // Import du Header
-import { Outlet } from 'react-router-dom';
-import Footer from './components/footer';
+import { Outlet } from "react-router-dom";
+import Header from "./components/header"; 
+import Footer from "./components/footer";
 
-import './App.css';
-
+import "./App.css";
 
 function App() {
   return (
     <div>
-      <Header /> 
-      {/* Autres contenus de l'application */}
+      <Header />
       <main>
-      <Outlet />  {/* Ceci rendra le contenu des routes enfants */}
-        {/* Contenu spécifique */}
+        <Outlet />
       </main>
-      <Footer />  {/* Ajout du footer ici */}
+      <Footer />
     </div>
   );
 }
