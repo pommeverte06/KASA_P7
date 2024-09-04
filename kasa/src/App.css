@@ -1,3 +1,7 @@
 #root {
-  background-color: red;
+  background-color: lightgrey;
+}
+
+* {
+  margin: 0px;
 }/*# sourceMappingURL=App.css.map */

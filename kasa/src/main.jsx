@@ -1,25 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom"; // import de react router
-import App from "./App"; // composant principal
-import Home from "./pages/home"; // accueil
-import About from "./pages/about"; //a propos
-import  "./index.css"; //a propos
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Logement from "./pages/logement"; 
+import NotFound from "./pages/notfound"; 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      {" "}
-      {/* Encapsule ton application avec BrowserRouter */}
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Home />} />{" "}
-          {/* Route par défaut pour la page d'accueil */}
-          <Route path="about" element={<About />} />{" "}
-          {/* Route pour la page "À propos" */}
+          <Route index element={<Home />} />
+          <Route path="logement/:id" element={<Logement />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

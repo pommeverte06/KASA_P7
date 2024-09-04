@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/kasaLogo.svg"; // Remplace par le chemin correct de ton logo
+import logo from "../assets/headerLogo.svg"; // Remplace par le chemin correct de ton logo
 import "./header.css";
 
 function Header() {
@@ -8,7 +8,7 @@ function Header() {
     <header className="banner">
       <div className="logo">
         <img src={logo} alt="logo Kasa" className="header-logo" />
-      </div>
+      </div> 
       <nav>
         <Link to="/">Accueil</Link>
         <Link to="/about">A Propos</Link>
