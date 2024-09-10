@@ -1,0 +1,67 @@
+
+
+  
+// .background-home {
+//     background-color: #f6f6f6;
+//     padding: 20px;
+//     margin-right: 100px;
+//     margin-left: 100px;
+//     border-radius: 25px;
+//   }
+  
+// //   .gallery {
+// //     display: grid;
+// //     grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+// //     grid-gap: 20px; /* Espacement entre les cartes */
+// //     justify-content: center; /* Centrer la grille */
+// //     padding: 20px;
+// //   }
+ 
+
+
+
+
+
+//   @media (max-width: 1200px) {
+//     .gallery {
+//       grid-template-columns: repeat(2, 1fr); /* 2 colonnes si l'écran est plus petit */
+//     }
+//   }
+  
+//   @media (max-width: 768px) {
+//     .gallery {
+//       grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
+//     }
+//   }
+  
+
+
+.background-home {
+    background-color: #f6f6f6;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 25px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 340px); /* Fixe la largeur des colonnes à 340px */
+    grid-gap: 20px; /* Espacement entre les cartes */
+    justify-content: center; /* Centrer la grille */
+  }
+  
+  @media (max-width: 1200px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les écrans plus petits */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
+    }
+  }
+  

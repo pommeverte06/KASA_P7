@@ -1,11 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 #root {
-  background-color: lightgrey;
-
-
+  overflow: hidden;
 }
 
-*{
-
+* {
   margin: 0px;
 }
 
@@ -13,3 +12,23 @@
 
 
 
+//page 404 not found
+.notfound-page {
+  text-align: center;
+
+  h1 {
+    font-size: 180px;
+    font-weight: bold;
+    color: #ff6060;
+  }
+
+  p {
+    font-size: 20px;
+    color: #ff6060;
+    font-weight: 500px;
+  }
+
+  a {
+    color: inherit;
+  }
+}

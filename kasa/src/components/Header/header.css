@@ -3,7 +3,7 @@
   width: 210px;
 }
 
-.banner {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

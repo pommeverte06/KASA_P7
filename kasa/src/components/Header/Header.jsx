@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/headerLogo.svg"; 
+import logo from "../../assets/header-logo.svg";
+
 import "./header.css";
 
 function Header() {
   return (
-    <header className="banner">
+    <header className="header">
       <div className="logo">
         <img src={logo} alt="logo Kasa" className="header-logo" />
       </div> 

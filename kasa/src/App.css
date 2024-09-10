@@ -1,7 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 #root {
-  background-color: lightgrey;
+  overflow: hidden;
 }
 
 * {
   margin: 0px;
+}
+
+.notfound-page {
+  text-align: center;
+}
+.notfound-page h1 {
+  font-size: 180px;
+  font-weight: bold;
+  color: #ff6060;
+}
+.notfound-page p {
+  font-size: 20px;
+  color: #ff6060;
+  font-weight: 500px;
+}
+.notfound-page a {
+  color: inherit;
 }/*# sourceMappingURL=App.css.map */
