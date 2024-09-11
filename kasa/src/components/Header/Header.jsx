@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/header-logo.svg";
-
 import "./header.css";
 
 function Header() {
@@ -9,12 +8,24 @@ function Header() {
     <header className="header">
       <div className="logo">
         <img src={logo} alt="logo Kasa" className="header-logo" />
-      </div> 
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A Propos</Link>
+      </div>
+      <nav className="navbar">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "inactive")}
+          end
+        >
+          Accueil
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "active" : "inactive")}
+        >
+          A Propos
+        </NavLink>
       </nav>
     </header>
   );
 }
+
 export default Header;

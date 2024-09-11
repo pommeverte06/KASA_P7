@@ -1,15 +1,38 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';  // sert pour acceder a l'id de la route
+import React, { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import logements from "../data/logements.json";
 
 function Logement() {
-  const { id } = useParams();  // extrait l'id depuis l'URL
+  const { id } = useParams(); // extrait l'id depuis l'URL
+  const navigate = useNavigate(); // initialise le hook pour rediriger
 
-  // utiliser les ID du logement correspondant, bien regarder le fichier json pour voir comment il est fichu et les catégories et comment on importe en fonction de ce que j'ai besoin de récupérer comme données pour la suite.
+  const logement = logements.find((logement) => logement.id === id);
+
+  // redirige vers la page NotFound 404 si le logement n'est pas trouvé
+  useEffect(() => {
+    if (!logement) {
+      navigate("/notfound"); // redirige vers la route notfound
+    }
+  }, [logement, navigate]);
+
+  if (!logement) {
+    return null;
+  }
 
   return (
     <div>
-      <h1> {id}</h1>
-      <p>Voici les détails du logement avec l'ID : {id}</p>
+      <img src={logement.cover} alt={logement.title} />
+      <h1>{logement.title}</h1>
+      <p>{logement.location}</p>
+      <h3>Description</h3>
+      <p>{logement.description}</p>
+
+      <h3>Équipements</h3>
+      <ul>
+        {logement.equipments.map((equipment, index) => (
+          <li key={index}>{equipment}</li>
+        ))}
+      </ul>
     </div>
   );
 }

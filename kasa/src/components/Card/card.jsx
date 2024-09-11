@@ -1,19 +1,7 @@
-// import React from 'react';
-// import './card.css'; 
 
-// function Card({ cover, title }) {
-//   return (
-//     <div className="card">
-//       <img src={cover} alt={title} className="card-image" />
-//       <div className="card-title">{title}</div>
-//     </div>
-//   );
-// }
-
-// export default Card;
 
 import React from 'react';
-import './Card.css'; // Le fichier CSS pour styliser les cards
+import './Card.css'; 
 
 function Card({ cover, title }) {
   return (
