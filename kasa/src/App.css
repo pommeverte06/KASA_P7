@@ -1,25 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 * {
   margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .notfound-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
   text-align: center;
 }
 .notfound-page h1 {
   font-size: 180px;
   font-weight: bold;
   color: #ff6060;
+  margin-bottom: 30px;
 }
 .notfound-page p {
-  font-size: 20px;
+  font-size: 24px;
   color: #ff6060;
-  font-weight: 500px;
+  font-weight: 500;
+  margin-bottom: 60px;
 }
 .notfound-page a {
   color: inherit;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: auto;
+  padding-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */
