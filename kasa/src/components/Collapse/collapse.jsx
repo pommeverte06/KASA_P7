@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import arrow from "../../assets/arrow.svg"; // Une seule icône de flèche
+import arrow from "../../assets/arrow.svg"; // l'icône de flèche
 import "./collapse.css";
 
 function Collapse({ title, content }) {
@@ -12,7 +12,7 @@ function Collapse({ title, content }) {
         <img
           src={arrow}
           alt="flèche d'ouverture"
-          className={`arrow ${isOpen ? "rotate" : ""}`} // Classe rotate appliquée si ouvert
+          className={`arrow ${isOpen ? "rotate" : ""}`} // rotate appliquée quand ouvert
         />
       </div>
       {isOpen && <div className="collapse-content">{content}</div>}

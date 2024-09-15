@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import logements from "../data/logements.json";
+import Slideshow from '../components/Slideshow/Slideshow'; // Import du composant Slideshow
+
 
 function Logement() {
   const { id } = useParams(); // extrait l'id depuis l'URL
@@ -8,7 +10,7 @@ function Logement() {
 
   const logement = logements.find((logement) => logement.id === id);
 
-  // redirige vers la page NotFound 404 si le logement n'est pas trouvé
+  // redirige vers la page notFound 404 si le logement n'est pas trouvé
   useEffect(() => {
     if (!logement) {
       navigate("/notfound"); // redirige vers la route notfound
@@ -21,7 +23,7 @@ function Logement() {
 
   return (
     <div>
-      <img src={logement.cover} alt={logement.title} />
+      <Slideshow pictures={logement.pictures} /> {/* Utilisation du composant Slideshow */}
       <h1>{logement.title}</h1>
       <p>{logement.location}</p>
       <h3>Description</h3>
