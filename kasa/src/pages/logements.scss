@@ -1,0 +1,84 @@
+.logement-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logement-content {
+    margin: 0 100px;
+  }
+  
+  .logement-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .logement-title {
+    font-size: 36px;
+    font-weight:normal;
+    color: #ff6060;
+  }
+  
+  .logement-location {
+    font-size: 18px;
+    color: black;
+    position: relative;
+    bottom: 15px;
+  }
+  
+  .logement-tags {
+    display: flex;
+    flex-wrap: wrap;
+ margin: 16px 0;
+justify-content: space-between;
+gap: 10px;
+
+
+    .tag {
+      background-color: #ff6060;
+      color: white;
+      padding: 4px 29px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      height: 25px;
+      margin-left: 10px;
+    }
+  }
+ 
+  .logement-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  
+    .infos {
+      flex: 2;
+    }
+  
+    .host-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+  
+      .host-name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+  
+      .host-picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  .collapse-content {
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    padding: 10px;
+  }
+  

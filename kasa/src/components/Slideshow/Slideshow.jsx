@@ -27,7 +27,7 @@ function Slideshow({ pictures }) {
         src={pictures[currentIndex]}
         alt={`slide ${currentIndex + 1}`}
       />
-      {pictures.length > 1 && ( // Afficher les flèches uniquement si plus d'une image
+      {pictures.length > 1 && ( // affichage des flèches pour les locations avec plus d'une seule image
         <>
           <img
             src={arrowLeft}

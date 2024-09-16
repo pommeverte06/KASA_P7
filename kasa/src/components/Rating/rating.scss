@@ -1,0 +1,21 @@
+.rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: #ff6060;
+  }
+  
+  .star-empty {
+    color: #ddd;
+  }
+  
+  
+    .rating-star {
+      width: 24px; // La taille des étoiles
+      height: 24px;
+      margin-right: 5px;
+    }
+  
