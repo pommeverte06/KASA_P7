@@ -41,16 +41,25 @@
   font-size: 14px;
   font-weight: bold;
   height: 25px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .logement-details {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  gap: 20px;
 }
 .logement-details .infos {
-  flex: 2;
+  flex: 1;
+  display: flex;
+  gap: 80px;
+}
+.logement-details .collapse {
+  width: 95%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+  margin-top: 10px;
 }
 .logement-details .host-info {
   flex: 1;

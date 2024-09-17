@@ -48,11 +48,10 @@ function Logement() {
           <Rating rating={logement.rating} /> {/* Affichage des étoiles */}
         </div>
 
-        {/* Host et Rating */}
         <div className="logement-details">
           <div className="infos">
             {/* Réutiliser Collapse pour la Description et Équipements */}
-            <Collapse title="Description" content={logement.description} />
+            <Collapse  title="Description" content={logement.description} />
             <Collapse
               title="Équipements"
               content={
