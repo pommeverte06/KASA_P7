@@ -5,13 +5,11 @@
   font-size: 24px;
   height: 192px;
 }
-
-.footer-logo img {
+.footer .footer-logo img {
   width: 122px;
   height: 39.44px;
-  margin: 55px 0px 28.56px 0px;
+  margin: 55px 0 28.56px 0;
 }
-
 .footer p {
   margin-top: 5px;
 }/*# sourceMappingURL=footer.css.map */

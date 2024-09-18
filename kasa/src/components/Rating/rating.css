@@ -2,17 +2,14 @@
   display: flex;
   align-items: center;
 }
-
-.star {
+.rating .star {
   font-size: 20px;
   color: #ff6060;
 }
-
-.star-empty {
+.rating .star-empty {
   color: #ddd;
 }
-
-.rating-star {
+.rating .rating-star {
   width: 24px;
   height: 24px;
   margin-right: 5px;

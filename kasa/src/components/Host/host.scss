@@ -1,9 +1,8 @@
 .host {
-    display: flex;
-    align-items: center;
-    width: 167px;
-  }
-  
+  display: flex;
+  align-items: center;
+  width: 167px;
+
   .host-name {
     font-size: 18px;
     font-weight: medium;
@@ -11,11 +10,11 @@
     color: #ff6060;
     text-align: right;
   }
-  
+
   .host-picture {
     border-radius: 50%;
     width: 64px;
     height: 64px;
     object-fit: cover;
   }
-  
+}

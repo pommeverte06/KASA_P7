@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import './slideshow.css'; // styles associés au composant
-import arrowLeft from '../../assets/arrow-left.svg'; // flèche gauche
-import arrowRight from '../../assets/arrow-right.svg'; // flèche droite
+import React, { useState } from "react";
+import "./slideshow.css";
+import arrowLeft from "../../assets/arrow-left.svg";
+import arrowRight from "../../assets/arrow-right.svg";
 
 function Slideshow({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Fonction pour aller à l'image précédente
+  // fonction image précédente
   const previousSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? pictures.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
-  // Fonction pour aller à l'image suivante
+  // fonction image suivante
   const nextSlide = () => {
     const isLastSlide = currentIndex === pictures.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
@@ -43,9 +43,12 @@ function Slideshow({ pictures }) {
           />
         </>
       )}
-      {/* <p className="slideshow-counter">
-        {currentIndex + 1}/{pictures.length}
-      </p> */}
+
+      {pictures.length > 1 && ( // compteur si plus d'une image
+        <p className="slideshow-counter">
+          {currentIndex + 1}/{pictures.length}
+        </p>
+      )}
     </div>
   );
 }

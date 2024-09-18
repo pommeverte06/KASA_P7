@@ -8,25 +8,22 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 100px;
+  margin: 0 100px;
 }
 
 .navbar {
   display: flex;
   gap: 50px;
 }
-
 .navbar a {
   text-decoration: none;
   font-size: 22px;
   font-weight: medium;
 }
-
 .navbar a.active {
   text-decoration: underline;
   color: black;
 }
-
 .navbar a.inactive {
   color: black;
   text-decoration: none;
