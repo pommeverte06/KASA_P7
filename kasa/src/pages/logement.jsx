@@ -27,17 +27,16 @@ function Logement() {
     <div className="logement-page">
       <Slideshow pictures={logement.pictures} />
 
-      {/* Container pour les éléments sous le Slideshow */}
+      {/* container pour les éléments sous le slideshow */}
       <div className="logement-content">
-        {/* Titre et Localisation */}
+
         <div className="logement-header">
           <h1 className="logement-title">{logement.title}</h1>
-          {/* Host info */}
           <Host name={logement.host.name} picture={logement.host.picture} />
         </div>
+
         <p className="logement-location">{logement.location}</p>
 
-        {/* Tags */}
         <div className="logement-tags">
           <div>{logement.tags.map((tag, index) => (
             <span className="tag" key={index}>
@@ -45,12 +44,11 @@ function Logement() {
             </span>
           ))}
           </div>
-          <Rating rating={logement.rating} /> {/* Affichage des étoiles */}
+          <Rating rating={logement.rating} /> {/* affichage des étoiles */}
         </div>
 
         <div className="logement-details">
           <div className="infos">
-            {/* Réutiliser Collapse pour la Description et Équipements */}
             <Collapse  title="Description" content={logement.description} />
             <Collapse
               title="Équipements"

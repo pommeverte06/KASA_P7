@@ -1,7 +1,5 @@
 .collapse {
-  border-radius: 5px;
-  background-color: #ff6060;
-  margin: 20px 100px 20px 100px; /* Ajustement des marges pour s'adapter à la maquette */
+  margin: 20px 100px 20px 100px; 
 
   .collapse-header {
     display: flex;
@@ -11,6 +9,8 @@
     padding: 15px;
     color: white;
     font-size: 18px;
+    background-color: #ff6060;
+    border-radius: 5px;
 
     img {
       width: 20px;

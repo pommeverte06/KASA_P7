@@ -56,10 +56,7 @@
 }
 .logement-details .collapse {
   width: 95%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 50px;
-  margin-top: 10px;
+  margin: 10px 0 50px 0;
 }
 .logement-details .host-info {
   flex: 1;
@@ -79,8 +76,8 @@
   margin-top: 10px;
 }
 
-.collapse-content {
-  margin-top: 10px;
-  background-color: #f7f7f7;
-  padding: 10px;
+.collapse-content ul {
+  background-color: white;
+  padding: 0px 0 0 0px;
+  list-style-type: none;
 }/*# sourceMappingURL=logements.css.map */
