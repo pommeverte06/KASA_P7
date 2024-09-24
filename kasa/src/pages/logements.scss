@@ -5,18 +5,43 @@
 
 .logement-content {
   margin: 0 100px;
+
+  @media (max-width: 1024px) {
+    margin: 0 50px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 20px;
+  }
 }
 
 .logement-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    // align-items: flex-start;
+  }
 }
 
 .logement-title {
   font-size: 36px;
   font-weight: normal;
   color: #ff6060;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .logement-location {
@@ -24,6 +49,16 @@
   color: black;
   position: relative;
   bottom: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin-top: 14px;
+  }
 }
 
 .logement-tags {
@@ -32,6 +67,13 @@
   margin: 16px 0;
   justify-content: space-between;
   gap: 10px;
+
+  @media (max-width: 480px) {
+    position: relative;
+    bottom: 5px;
+    gap: 25px;
+    margin: 0 0 10px 0;
+  }
 
   .tag {
     background-color: #ff6060;
@@ -42,6 +84,17 @@
     font-weight: bold;
     height: 25px;
     margin-right: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      padding: 4px 24px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 10px;
+      padding: 2px 18px;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -50,15 +103,34 @@
   justify-content: space-between;
   gap: 20px;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    // gap: 10px;
+  }
+
   .infos {
     flex: 1;
     display: flex;
     gap: 80px;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
   }
 
   .collapse {
     width: 95%;
     margin: 10px 0 50px 0;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      margin: 5px 0 23px 0;
+      height: 30px;
+      width: 100%;
+    }
   }
 
   .host-info {
@@ -71,6 +143,14 @@
     .host-name {
       font-size: 16px;
       font-weight: bold;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 12px;
+      }
     }
 
     .host-picture {
@@ -78,6 +158,16 @@
       height: 64px;
       border-radius: 50%;
       margin-top: 10px;
+
+      @media (max-width: 768px) {
+        width: 48px;
+        height: 48px;
+      }
+
+      @media (max-width: 480px) {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }
