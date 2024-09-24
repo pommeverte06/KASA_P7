@@ -35,6 +35,51 @@
     font-size: 24px;
     text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.8);
     z-index: 2;
-    white-space: nowrap;
+     white-space: nowrap;
+  }
+}
+
+
+// Media Queries 
+
+// pour les écrans entre 768px et 1024px
+@media (max-width: 1024px) {
+  .banner {
+    margin: 30px 50px;
+    height: 180px;
+  }
+
+  .banner-text {
+    font-size: 20px;
+  }
+}
+
+// Pour les écrans entre 480px et 768px
+@media (max-width: 768px) {
+  .banner {
+    margin: 20px 20px;
+    height: 150px;
+  }
+
+  .banner-text {
+    font-size: 15px !important;
+  }
+}
+
+// Pour les écrans de 480px et moins (petits mobiles)
+@media (max-width: 480px) {
+  .banner {
+    margin: 20px 20px;
+    height: 111px;
+    border-radius: 10px;
+  }
+
+  .banner-text h1{
+    font-size: 24px !important;
+    white-space:normal; // Permet de casser les lignes si nécessaire sur mobile
+    width: 235px;
+    text-align: left;
+    position: relative;
+    right: 35px;
   }
 }

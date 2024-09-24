@@ -1,5 +1,5 @@
 .collapse {
-  margin: 20px 100px 20px 100px; 
+  margin: 20px 13% 30px 13%;
 
   .collapse-header {
     display: flex;
@@ -31,8 +31,62 @@
     transition: transform 0.3s ease-in-out;
 
     &.rotate {
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
     }
-    
+  }
+}
+
+// Media Queries
+
+@media (max-width: 1024px) {
+  .collapse {
+    margin: 20px 10%;
+
+    .collapse-header {
+      font-size: 16px;
+      padding: 12px;
+    }
+
+    .collapse-content {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .collapse {
+    margin: 20px 8%;
+
+    .collapse-header {
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    .collapse-content {
+      font-size: 13px;
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .collapse {
+    margin: 20px 5%;
+
+    .collapse-header {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .collapse-content {
+      font-size: 14px;
+      padding: 12px;
+    }
+
+    img {
+      width: 16px;
+      height: 9px;
+    }
   }
 }

@@ -29,7 +29,6 @@ function Logement() {
 
       {/* container pour les éléments sous le slideshow */}
       <div className="logement-content">
-
         <div className="logement-header">
           <h1 className="logement-title">{logement.title}</h1>
           <Host name={logement.host.name} picture={logement.host.picture} />
@@ -38,18 +37,19 @@ function Logement() {
         <p className="logement-location">{logement.location}</p>
 
         <div className="logement-tags">
-          <div>{logement.tags.map((tag, index) => (
-            <span className="tag" key={index}>
-              {tag}
-            </span>
-          ))}
+          <div>
+            {logement.tags.map((tag, index) => (
+              <span className="tag" key={index}>
+                {tag}
+              </span>
+            ))}
           </div>
-          <Rating rating={logement.rating} /> {/* affichage des étoiles */}
+          <Rating rating={logement.rating} /> 
         </div>
 
         <div className="logement-details">
           <div className="infos">
-            <Collapse  title="Description" content={logement.description} />
+            <Collapse title="Description" content={logement.description} />
             <Collapse
               title="Équipements"
               content={

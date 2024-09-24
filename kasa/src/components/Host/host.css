@@ -3,17 +3,50 @@
   align-items: center;
   width: 167px;
 }
-.host .host-name {
+
+.host-name {
   font-size: 18px;
   font-weight: medium;
   margin-right: 10px;
   color: #ff6060;
   text-align: right;
 }
-.host .host-picture {
+
+.host-picture {
   border-radius: 50%;
   width: 64px;
   height: 64px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .host-name {
+    font-size: 18px;
+  }
+  .host-picture {
+    width: 58px;
+    height: 58px;
+    border-radius: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .host-name {
+    font-size: 15px;
+  }
+  .host-picture {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .host-name {
+    font-size: 12px;
+  }
+  .host-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+  }
 }/*# sourceMappingURL=host.css.map */

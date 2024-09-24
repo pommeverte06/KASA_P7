@@ -27,4 +27,58 @@
 .navbar a.inactive {
   color: black;
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin: 0 50px;
+  }
+  .header-logo {
+    height: 60px;
+    width: 180px;
+  }
+  .navbar {
+    gap: 30px;
+  }
+  .navbar a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .header-logo {
+    height: 47px;
+    width: 145px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .navbar a {
+    font-size: 16px;
+    font-weight: medium;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    margin: 0 20px;
+  }
+  .header-logo {
+    height: 47px;
+    width: 145px;
+  }
+  .navbar {
+    gap: 15px;
+  }
+  .navbar a {
+    font-size: 16px;
+    font-weight: medium;
+  }
 }/*# sourceMappingURL=header.css.map */

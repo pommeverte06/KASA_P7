@@ -1,16 +1,38 @@
 .rating {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
-.rating .star {
-  font-size: 20px;
+
+.star {
   color: #ff6060;
 }
-.rating .star-empty {
+.star .star-empty {
   color: #ddd;
 }
-.rating .rating-star {
+.star .rating-star {
   width: 24px;
   height: 24px;
-  margin-right: 5px;
+}
+
+@media (max-width: 1024px) {
+  .rating-star {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .rating-star {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .rating-star {
+    width: 18px;
+    height: 18px;
+  }
+  .rating {
+    gap: 6px;
+  }
 }/*# sourceMappingURL=rating.css.map */

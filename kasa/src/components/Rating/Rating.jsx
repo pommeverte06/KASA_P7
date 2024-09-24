@@ -1,7 +1,8 @@
-import "./rating.css";
 import React from "react";
 import starFull from "../../assets/star-full.svg"; 
 import starEmpty from "../../assets/star-empty.svg"; 
+import "./rating.css";
+
 
 function Rating({ rating }) {
   const stars = [];
@@ -12,7 +13,7 @@ function Rating({ rating }) {
       <img
         key={i}
         src={i <= rating ? starFull : starEmpty}
-        alt={i <= rating ? "Étoile pleine" : "Étoile vide"}
+        alt={i <= rating ? "étoile pleine" : "étoile vide"}
         className="rating-star"
       />
     );

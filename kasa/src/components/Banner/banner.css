@@ -34,4 +34,38 @@
   text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.8);
   z-index: 2;
   white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    margin: 30px 50px;
+    height: 180px;
+  }
+  .banner-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    margin: 20px 20px;
+    height: 150px;
+  }
+  .banner-text {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 480px) {
+  .banner {
+    margin: 20px 20px;
+    height: 111px;
+    border-radius: 10px;
+  }
+  .banner-text h1 {
+    font-size: 24px !important;
+    white-space: normal;
+    width: 235px;
+    text-align: left;
+    position: relative;
+    right: 35px;
+  }
 }/*# sourceMappingURL=banner.css.map */

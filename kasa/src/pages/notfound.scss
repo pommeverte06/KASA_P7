@@ -1,0 +1,87 @@
+// Page 404 not found
+.notfound-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 180px;
+    font-weight: bold;
+    color: #ff6060;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 24px;
+    color: #ff6060;
+    font-weight: 500;
+
+    margin-bottom: 60px;
+  }
+
+  a {
+    color: inherit;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+}
+// media queries
+
+@media (max-width: 1024px) {
+  .notfound-page {
+    h1 {
+      font-size: 150px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .notfound-page {
+    h1 {
+      font-size: 120px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .notfound-page {
+    margin: 0;
+  }
+  .notfound-page {
+    h1 {
+      font-size: 80px;
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      max-width: 260px;
+      min-height: 52px;
+      margin: 0 57px 80px 57px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}

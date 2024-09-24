@@ -1,5 +1,5 @@
 .collapse {
-  margin: 20px 100px 20px 100px;
+  margin: 20px 13% 30px 13%;
 }
 .collapse .collapse-header {
   display: flex;
@@ -28,5 +28,49 @@
   transition: transform 0.3s ease-in-out;
 }
 .collapse .arrow.rotate {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1024px) {
+  .collapse {
+    margin: 20px 10%;
+  }
+  .collapse .collapse-header {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .collapse .collapse-content {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .collapse {
+    margin: 20px 8%;
+  }
+  .collapse .collapse-header {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .collapse .collapse-content {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .collapse {
+    margin: 20px 5%;
+  }
+  .collapse .collapse-header {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .collapse .collapse-content {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .collapse img {
+    width: 16px;
+    height: 9px;
+  }
 }/*# sourceMappingURL=collapse.css.map */

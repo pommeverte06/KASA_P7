@@ -36,3 +36,18 @@
     margin-bottom: 15px;
   }
 }
+// Media Queries
+
+
+@media (max-width: 480px) {
+  .card {
+    height: 255px;
+    width: 335px;
+
+    .card-title {
+      font-size: 18px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -31,3 +31,74 @@
     }
   }
 }
+
+
+
+
+// Média queries pour tablettes (entre 768px et 1024px)
+@media (max-width: 1024px) {
+  .header {
+    margin: 0 50px;
+  }
+
+  .header-logo {
+    height: 60px;
+    width: 180px;
+  }
+
+  .navbar {
+    gap: 30px;
+
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+// Media query pour mobile (moins de 768px)
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .header-logo {
+    height: 47px;
+    width: 145px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    a {
+      font-size: 16px;
+      font-weight: medium;
+    }
+  }
+}
+
+// Media query pour petits appareils (moins de 480px)
+@media (max-width: 480px) {
+  .header {
+    margin: 0 20px;
+  }
+
+  .header-logo {
+    height: 47px;
+    width: 145px;
+  }
+
+  .navbar {
+    gap: 15px;
+
+    a {
+      font-size: 16px;
+      font-weight: medium;
+    }
+  }
+}

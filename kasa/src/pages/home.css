@@ -42,13 +42,26 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1200px) {
+/* media queries*/
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none;
+  }
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 340px);
   }
 }
 @media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
   .gallery {
     grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-top: 0;
+  }
+  .background-home {
+    background-color: white;
+    margin-top: 0;
   }
 }/*# sourceMappingURL=home.css.map */

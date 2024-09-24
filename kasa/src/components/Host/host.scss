@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   width: 167px;
-
+}
   .host-name {
     font-size: 18px;
     font-weight: medium;
@@ -16,5 +16,41 @@
     width: 64px;
     height: 64px;
     object-fit: cover;
+  }
+
+// Media Queries pour adapter les petits écrans
+@media (max-width: 1024px) {
+  .host-name {
+    font-size: 18px; 
+  }
+
+  .host-picture {
+    width: 58px;
+    height: 58px; 
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .host-name {
+    font-size: 15px; 
+  }
+
+  .host-picture {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .host-name {
+    font-size: 12px; 
+  }
+
+  .host-picture {
+    width: 32px;
+    height: 32px; 
+    border-radius: 50px;
   }
 }
