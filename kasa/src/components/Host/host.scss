@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   width: 167px;
-}
+
   .host-name {
     font-size: 18px;
     font-weight: medium;
@@ -18,39 +18,37 @@
     object-fit: cover;
   }
 
-// Media Queries pour adapter les petits écrans
-@media (max-width: 1024px) {
-  .host-name {
-    font-size: 18px; 
+  // media queries 
+  @media (max-width: 768px) {
+    max-width: 130px;
+
+    .host-name {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    .host-picture {
+      width: 48px;
+      height: 48px;
+    }
   }
 
-  .host-picture {
-    width: 58px;
-    height: 58px; 
-    border-radius: 50px;
-  }
-}
+  @media (max-width: 424px) {
+    align-items: center;
+    max-width: 110px;
+    position: relative;
+    bottom: -97px;
 
-@media (max-width: 768px) {
-  .host-name {
-    font-size: 15px; 
-  }
+    .host-name {
+      text-align: right;
+      font-size: 12px;
+      margin-right: 5px;
+    }
 
-  .host-picture {
-    width: 45px;
-    height: 45px;
-    border-radius: 50px; 
-  }
-}
-
-@media (max-width: 480px) {
-  .host-name {
-    font-size: 12px; 
-  }
-
-  .host-picture {
-    width: 32px;
-    height: 32px; 
-    border-radius: 50px;
+    .host-picture {
+      width: 32px;
+      height: 32px;
+      margin-right: 2px;
+    }
   }
 }

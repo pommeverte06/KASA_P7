@@ -3,50 +3,48 @@
   align-items: center;
   width: 167px;
 }
-
-.host-name {
+.host .host-name {
   font-size: 18px;
   font-weight: medium;
   margin-right: 10px;
   color: #ff6060;
   text-align: right;
 }
-
-.host-picture {
+.host .host-picture {
   border-radius: 50%;
   width: 64px;
   height: 64px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-@media (max-width: 1024px) {
-  .host-name {
-    font-size: 18px;
-  }
-  .host-picture {
-    width: 58px;
-    height: 58px;
-    border-radius: 50px;
-  }
-}
 @media (max-width: 768px) {
-  .host-name {
-    font-size: 15px;
+  .host {
+    max-width: 130px;
   }
-  .host-picture {
-    width: 45px;
-    height: 45px;
-    border-radius: 50px;
+  .host .host-name {
+    text-align: right;
+    font-size: 14px;
+  }
+  .host .host-picture {
+    width: 48px;
+    height: 48px;
   }
 }
-@media (max-width: 480px) {
-  .host-name {
-    font-size: 12px;
+@media (max-width: 424px) {
+  .host {
+    align-items: center;
+    max-width: 110px;
+    position: relative;
+    bottom: -97px;
   }
-  .host-picture {
+  .host .host-name {
+    text-align: right;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  .host .host-picture {
     width: 32px;
     height: 32px;
-    border-radius: 50px;
+    margin-right: 2px;
   }
 }/*# sourceMappingURL=host.css.map */

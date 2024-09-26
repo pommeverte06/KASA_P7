@@ -125,6 +125,7 @@
 @media (max-width: 480px) {
   .logement-details .infos {
     flex-direction: column;
+    gap: 0;
   }
 }
 .logement-details .collapse {
@@ -139,7 +140,6 @@
 @media (max-width: 480px) {
   .logement-details .collapse {
     margin: 5px 0 23px 0;
-    height: 30px;
     width: 100%;
   }
 }
@@ -164,26 +164,25 @@
     font-size: 12px;
   }
 }
-.logement-details .host-info .host-picture {
+.logement-details .host-info .host-name .host-picture {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   margin-top: 10px;
 }
 @media (max-width: 768px) {
-  .logement-details .host-info .host-picture {
+  .logement-details .host-info .host-name .host-picture {
     width: 48px;
     height: 48px;
   }
 }
 @media (max-width: 480px) {
-  .logement-details .host-info .host-picture {
+  .logement-details .host-info .host-name .host-picture {
     width: 40px;
     height: 40px;
   }
 }
-
-.collapse-content ul {
+.logement-details .collapse-content ul {
   background-color: white;
   padding: 0px 0 0 0px;
   list-style-type: none;
