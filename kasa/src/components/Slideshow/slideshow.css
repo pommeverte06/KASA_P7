@@ -70,7 +70,7 @@
     font-size: 14px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .slideshow {
     width: 335px;
     height: 255px;
