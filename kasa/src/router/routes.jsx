@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Logement from "../pages/Logement";
-import NotFound from "../pages/Notfound";
+import Home from "../pages/Home/Home.jsx";
+import About from "../pages/About/About";
+import Logement from "../pages/Logement/Logement";
+import NotFound from "../pages/Notfound/Notfound.jsx";
 import App from "../App"; //contient header et footer
 
 function Router() {

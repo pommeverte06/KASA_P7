@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Banner from "../components/Banner/Banner";
-import Card from "../components/Card/card";
-import homeBannerImage from "../assets/img-home.png";
-import logements from "../data/logements.json";
+import Banner from "../../components/Banner/Banner";
+import Card from "../../components/Card/card";
+import homeBannerImage from "../../assets/img-home.png";
+import logements from "../../data/logements.json";
 import "./home.css";
 
 function Home() {

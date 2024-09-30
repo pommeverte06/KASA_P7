@@ -30,7 +30,7 @@
     height: 48px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 389px) {
   .host {
     align-items: center;
     max-width: 110px;

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import logements from "../data/logements.json";
-import Slideshow from "../components/Slideshow/Slideshow";
-import Rating from "../components/Rating/Rating";
-import Host from "../components/Host/Host";
-import Collapse from "../components/Collapse/collapse";
+import logements from "../../data/logements.json";
+import Slideshow from "../../components/Slideshow/Slideshow";
+import Rating from "../../components/Rating/Rating";
+import Host from "../../components/Host/Host";
+import Collapse from "../../components/Collapse/collapse";
 import "./logements.css";
 
 function Logement() {
